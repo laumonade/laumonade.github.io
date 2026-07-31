@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="John Laurence C. Niñeza - Electronics Engineering Portfolio">
+  <title>John Laurence C. Niñeza | Electronics Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">⌁</span>
+      <span>My Portfolio</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1>John Laurence<br>C. Niñeza.</h1>
+        <h2>BSECE <span>|</span> Electronics & Telecommunications</h2>
+        <p class="hero-description">
+          A motivated Electronics Engineering student with a strong interest in
+          embedded systems, electronics, automation, and telecommunications.
+          Experienced in developing academic projects involving ESP32,
+          network systems, and smart automation.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View My Projects</a>
+          <a class="icon-link" href="https://github.com/laumonade" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a class="icon-link" href="mailto:laurencenineza01@gmail.com" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <img src="lau.jpg" alt="John Laurence C. Niñeza">
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Get to know me</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Education</h3>
+          <p><strong>Bachelor of Science in Electronics Engineering</strong></p>
+          <p>Batangas State University – The National Engineering University</p>
+          <p class="muted">Major in Information and Communication Technology / Telecommunications</p>
+          <p class="muted">A.Y. 2025 – 2027</p>
+        </div>
+
+        <div class="about-card reveal">
+          <h3>Career Goal</h3>
+          <p>
+            I am seeking opportunities where I can apply my knowledge in
+            electronics, embedded systems, automation, and communication
+            technologies while gaining practical industry experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">What I work with</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span>01</span><h3>Embedded Systems</h3><p>ESP32, Arduino, sensors, displays and actuators</p></div>
+        <div class="skill-card reveal"><span>02</span><h3>Electronics</h3><p>Circuit design, analysis, testing and troubleshooting</p></div>
+        <div class="skill-card reveal"><span>03</span><h3>Programming</h3><p>Python, Arduino C/C++, HTML, CSS and JavaScript</p></div>
+        <div class="skill-card reveal"><span>04</span><h3>Networking</h3><p>IP networking, Cisco Packet Tracer and network system design</p></div>
+        <div class="skill-card reveal"><span>05</span><h3>Simulation & Design</h3><p>Multisim, LabVIEW and technical system design</p></div>
+        <div class="skill-card reveal"><span>06</span><h3>Automation</h3><p>Smart systems, monitoring, control and real-time applications</p></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Academic Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <h3>Smart Mini ATM Machine</h3>
+          <p>
+            An ESP32-based ATM prototype featuring RFID authentication, PIN
+            verification, LCD interface, servo-based dispensing, and a
+            real-time web dashboard.
+          </p>
+          <div class="tags">
+            <span>ESP32</span><span>RFID</span><span>Python Flask</span><span>Web</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3>IP-Based PAVA System</h3>
+          <p>
+            Designed an IP-based Public Address and Voice Alarm system for a
+            two-story building, focusing on communication and emergency
+            notification.
+          </p>
+          <div class="tags">
+            <span>IP Network</span><span>PAVA</span><span>System Design</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">03</div>
+          <h3>Smart Evacuation Guidance System</h3>
+          <p>
+            Designed an intelligent exit lighting system with real-time path
+            optimization and occupant density detection for improved emergency
+            guidance.
+          </p>
+          <div class="tags">
+            <span>Automation</span><span>Sensors</span><span>Safety</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">04</div>
+          <h3>IP-Based CCTV System</h3>
+          <p>
+            Designed an IP-based CCTV surveillance system for a two-story
+            commercial building using structured network design.
+          </p>
+          <div class="tags">
+            <span>CCTV</span><span>Networking</span><span>Cisco Packet Tracer</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Learning & recognition</p>
+        <h2>Certifications & Awards</h2>
+      </div>
+
+      <div class="cert-list reveal">
+        <div class="cert-item"><span>✓</span><div><h3>Cisco Networking Academy</h3><p>Networking-related training and learning</p></div></div>
+        <div class="cert-item"><span>✓</span><div><h3>Consistent Honor Student</h3><p>Academic recognition</p></div></div>
+        <div class="cert-item"><span>✓</span><div><h3>Extra Curricular Achiever</h3><p>Recognition for extracurricular involvement</p></div></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Have an opportunity?</h2>
+        <p>
+          I am currently looking for an OJT opportunity where I can learn,
+          contribute, and gain hands-on engineering experience.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:laurencenineza01@gmail.com">Email Me</a>
+          <a class="btn secondary" href="tel:+639218003210">Call Me</a>
+        </div>
+
+        <div class="contact-details">
+          <span>✉ laurencenineza01@gmail.com</span>
+          <span>☎ +63 921 800 3210</span>
+          <span>📍 Tanauan City, Batangas</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> John Laurence C. Niñeza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
