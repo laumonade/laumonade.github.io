@@ -59,3 +59,37 @@ window.addEventListener("scroll", () => {
     );
   });
 });
+
+// ================= IMAGE LIGHTBOX =================
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const caption = document.getElementById("caption");
+
+document.querySelectorAll(".clickable-image").forEach(img => {
+
+    img.addEventListener("click", function(){
+
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        caption.innerHTML = this.alt;
+
+    });
+
+});
+
+document.querySelector(".close").onclick = function(){
+
+    modal.style.display = "none";
+
+}
+
+modal.onclick = function(e){
+
+    if(e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+}
