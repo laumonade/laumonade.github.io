@@ -177,52 +177,121 @@ nav a:hover, nav a.active { color: var(--primary); }
   line-height: 1.1;
 }
 
-.about-grid, .skills-grid, .project-grid {
-  display: grid;
-  gap: 22px;
+.about-grid,
+.skills-grid,
+/* ================= PROJECTS ================= */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
 }
 
-.about-grid { grid-template-columns: 1fr 1fr; }
-
-.about-card, .skill-card, .project-card, .cert-list {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+.project-card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:28px;
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    transition:.3s ease;
 }
 
-.about-card { padding: 28px; }
-.about-card h3 { margin-bottom: 12px; }
-.muted { color: var(--muted); font-size: 14px; }
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 42px rgba(19,38,63,.15);
+}
 
-.skills-grid { grid-template-columns: repeat(3, 1fr); }
-.skill-card { padding: 24px; }
-.skill-card span, .project-number {
-  color: var(--primary);
-  font-size: 12px;
-  font-weight: 700;
+.project-number{
+    color:var(--primary);
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:8px;
 }
-.skill-card h3 { margin: 8px 0 5px; font-size: 18px; }
-.skill-card p, .project-card p { color: var(--muted); font-size: 14px; }
 
-.project-grid { grid-template-columns: repeat(2, 1fr); }
-.project-card {
-  padding: 28px;
-  transition: transform .25s, box-shadow .25s;
+.project-card h3{
+    font-size:24px;
+    margin-bottom:6px;
 }
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 42px rgba(19, 38, 63, .15);
+
+.project-meta{
+    color:var(--primary);
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
 }
-.project-card h3 { font-size: 21px; margin: 8px 0 10px; }
-.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
-.tags span {
-  background: rgba(8, 103, 242, .08);
-  color: var(--primary);
-  border-radius: 20px;
-  padding: 4px 9px;
-  font-size: 11px;
-  font-weight: 600;
+
+/* ---------- Project Images ---------- */
+
+.project-images{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.project-image{
+    text-align:center;
+}
+
+.project-image h4{
+    font-size:13px;
+    color:var(--primary);
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.project-images img{
+    width:170px;
+    height:110px;
+    object-fit:cover;
+    border-radius:8px;
+    border:1px solid var(--line);
+    box-shadow:0 6px 14px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-images img:hover{
+    transform:scale(1.05);
+}
+
+/* ---------- Bullet List ---------- */
+
+.project-list{
+    margin-top:10px;
+    padding-left:20px;
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.8;
+}
+
+.project-list li{
+    margin-bottom:14px;
+}
+
+.project-list strong{
+    color:var(--text);
+}
+
+/* ---------- Technology Tags ---------- */
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:auto;
+    padding-top:18px;
+}
+
+.tags span{
+    background:rgba(8,103,242,.08);
+    color:var(--primary);
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
 }
 
 .cert-list { padding: 5px 25px; }
@@ -336,4 +405,62 @@ body.dark {
   .hero h1 { font-size: 45px; }
   .contact-box { padding: 35px 20px; }
   .contact-details { flex-direction: column; }
+}
+/* ================= IMAGE LIGHTBOX ================= */
+
+.clickable-image{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.clickable-image:hover{
+    transform:scale(1.05);
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background:rgba(0,0,0,.9);
+    animation:fadeIn .3s;
+}
+
+.modal-content{
+    display:block;
+    margin:40px auto;
+    max-width:90%;
+    max-height:85vh;
+    border-radius:12px;
+    box-shadow:0 0 30px rgba(255,255,255,.15);
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:#fff;
+    font-size:42px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.close:hover{
+    color:#0d6efd;
+}
+
+#caption{
+    color:#fff;
+    text-align:center;
+    margin-top:10px;
+    font-size:18px;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
 }
