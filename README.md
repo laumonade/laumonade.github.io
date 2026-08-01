@@ -1,17 +1,38 @@
-# John Laurence C. Niñeza — Portfolio
+# John Laurence C. Niñeza
 
-Personal portfolio website for GitHub Pages.
+## Electronics Engineering Portfolio
 
-## Files
+Welcome to my personal portfolio website.
 
-- `index.html` — portfolio structure and content
-- `style.css` — responsive styling and dark mode
-- `script.js` — navigation, animations, theme toggle, and active section
-- `profile.jpg` — add your professional photo here
+This website showcases my academic projects, technical skills, certifications, and engineering experience as a Bachelor of Science in Electronics Engineering student specializing in Information and Communication / Telecommunications.
 
-## How to use
+## Live Website
 
-1. Put `index.html`, `style.css`, and `script.js` in the same GitHub repository.
-2. Add your professional photo and name it `profile.jpg`.
-3. Update the GitHub and LinkedIn links in `index.html`.
-4. Enable GitHub Pages from the repository's Settings → Pages.
+👉 https://laumonade.github.io
+
+## Featured Projects
+
+- Smart Mini ATM Machine
+- IP-Based PAVA System Design
+- Smart Evacuation Guidance System
+- IP-Based CCTV Surveillance System
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- ESP32
+- Python Flask
+- RFID
+- Cisco Packet Tracer
+
+## Contact
+
+**John Laurence C. Niñeza**
+
+📧 laurencenineza01@gmail.com
+
+📱 +63 921 800 3210
+
+📍 Tanauan City, Batangas
